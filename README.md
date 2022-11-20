@@ -1,3 +1,11 @@
+## Supported Bitcoin Address Types
+Legacy 
+Segwit
+P2SH
+
+## Taproot Address Validation is Under Development
+
+
 # CoinUtils
 This library will bundle lightweight (as in no non-system dependencies) utility classes for working with Bitcoin and similar Altcoins in C#/.NET Core. Adding Bitcoin-derived Altcoins is fairly straighforward and pull requests (prefereably including test cases) are very appreciated. The library might support fundamentally different cryptocurrency protocols in the future, especially when no feasible other alternative for those use cases exists. However, feasible alternatives for e.g. address validation exist at least for [Ethereum](#ethereum) and [Ripple](#ripple). 
 
@@ -25,3 +33,6 @@ Nethereum.Util.AddressUtil.Current.IsValidEthereumAddressHexFormat(address)
 Ripple.Address.AddressCodec.IsValidAddress(address)
 ```
 [Ripple.NetCore](https://github.com/chriswill/ripple-netcore) validates Ripple addresses. However, it validates strictly offline, so it does not check if the [`RequireDest` flag](https://developers.ripple.com/become-an-xrp-ledger-gateway.html#requiredest) is set or if the [reserve requirements](https://developers.ripple.com/reserves.html) are met.
+
+
+
